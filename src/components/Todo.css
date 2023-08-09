@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
   }
   
   html,body{
@@ -10,19 +11,106 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    
+    background-color: #10113c;
   }
 
   .main-div {
     padding: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 300px;
     width: 400px;
-    background-color: rgb(255, 255, 200);
+    color: #f6dc3b;
+    background-color: #060620;
     border-radius: 1rem;
-    border: rgb(214, 26, 26);
-    border-color: blue;
-    
-    
+    overflow:auto;
+    position: relative;
+    box-shadow:  0rem 0rem 1rem 0rem rgba(195, 169, 169, 0.3);
   }
+
+  .eachItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #dadceb;
+    padding: 0.2rem;
+  }
+  
+input {
+  background-color:#747898;
+  border-radius: 3rem;
+  width:15rem ;
+}
+
+
+ #add-button {
+  font-size: 0.8rem;
+  font-weight:bold ;
+  color: #10113c;
+  background-color:  #747898;
+  cursor: pointer;
+  margin-left: 1rem;
+  width: 3rem;
+  border-radius: 2rem;
+  padding: 0.09rem;
+ }
+
+ .todo-items {
+  height:90% ;
+  width: 90%;
+  overflow: auto; /* Enable scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.addItems {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.showItems {
+  text-align: left;
+  width: 95%;
+}
+
+ #all-done {
+  width: 5rem;
+  align-self: center;
+  border-radius: 2rem;
+  background-color: #747898;
+  cursor: pointer;
+  font-weight:bold ;
+ }
+
+ #delete-button {
+  border-radius: 0.4rem;
+  background-color: #454753;
+  color: #999ebe;
+  cursor: pointer;
+  padding: 0 0.1rem;
+  margin-left: 0.3rem;
+ }
+
+.items-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 60%;
+  width: 100%;
+  
+}
+
+#add-button:hover,
+#all-done:hover,
+#delete-button:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+  
