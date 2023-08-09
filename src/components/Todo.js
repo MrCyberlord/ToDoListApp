@@ -24,7 +24,7 @@ const Todo = () => {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Add items"
+            placeholder="Add items here"
             value={inputData}
             onChange={(event) => setInputData(event.target.value)}
           />

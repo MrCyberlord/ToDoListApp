@@ -42,6 +42,14 @@ input {
   background-color:#747898;
   border-radius: 3rem;
   width:15rem ;
+  border-color: #dadceb;
+  color: #060620;
+}
+
+input::placeholder {
+  color: #4c4c82;
+  font-weight: bold;
+  font-family: Georgia;
 }
 
 
@@ -55,6 +63,7 @@ input {
   width: 3rem;
   border-radius: 2rem;
   padding: 0.09rem;
+  border-color: #b8c0f6;
  }
 
  .todo-items {
@@ -85,6 +94,7 @@ input {
   background-color: #747898;
   cursor: pointer;
   font-weight:bold ;
+  border-color: aliceblue;
  }
 
  #delete-button {
@@ -92,8 +102,11 @@ input {
   background-color: #454753;
   color: #999ebe;
   cursor: pointer;
-  padding: 0 0.1rem;
+  padding: 0 0.5rem;
   margin-left: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-color: #747898;
  }
 
 .items-container {
@@ -113,4 +126,3 @@ input {
   transform: scale(1.1);
   transition: all 1s ease;
 }
-  
